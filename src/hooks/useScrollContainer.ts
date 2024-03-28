@@ -273,7 +273,7 @@ export function useScrollContainer<Options>(
 				reference.current.addEventListener('touchstart', onTouchStart);
 			}
 		}
-	}, []);
+	}, [onScroll]);
 
 	useEffect(() => {
 		window.addEventListener('mouseup', onMouseUp);
